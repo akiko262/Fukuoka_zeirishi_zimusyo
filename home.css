@@ -1,0 +1,171 @@
+@charset "UTF-8";
+/* index.php---------------------------
+-------------------------------------- */
+.costomer-row-m {
+    margin-bottom: 10px;
+  }
+  .customer-img {
+    margin-right: 10px;
+  }
+  .slideBox {
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* テキストがあるバージョン */
+  .title {
+    font-size: 30px;
+    color: #333;
+    z-index: 11;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    transform: translate(-50%,-50%);
+    background-color: #FFF;
+    text-align: center;
+  }
+  
+  .item2 {
+    z-index: 10;
+    opacity: 0;
+    width: 100%;
+    height: 500px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-animation: anime 30s 0s infinite;
+    animation: anime 30s 0s infinite;
+  }
+  
+  .item2:nth-of-type(2) {
+    -webkit-animation-delay: 10s;
+    animation-delay: 10s;
+  }
+  
+  .item2:nth-of-type(3) {
+    -webkit-animation-delay: 20s;
+    animation-delay: 20s;
+  }
+  
+  /* ふわっとアニメーション */
+  @keyframes anime {
+    0% {
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    35% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+      z-index: 9;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @-webkit-keyframes anime {
+    0% {
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    35% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+      z-index: 9;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  .btn-m {
+    margin: 32px 0;
+    padding-top: 15px;
+  }
+  .btn-primary-color {
+    background-color: #2589d0;
+  }
+  .news-list{
+    list-style: none outside;
+    margin: 0;
+    padding: 0;
+  }
+  .news-list .item a{
+    display: flex;
+    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid #CCC;
+    padding: 20px 20px;
+  }
+  .news-list .item:first-child a{
+    border-top: 1px solid #CCC;
+  }
+  .news-list .item .date{
+    margin: 0;
+    min-width: 140px;
+    font-size: 16px;
+    color: #999;
+    padding: 0 20px 0 0;
+  }
+  .news-list .item .category{
+    margin: 0;
+    min-width: 140px;
+    padding: 0 20px 0 0;
+  }
+  .news-list .item .category span{
+    background: #999;
+    color: #FFF;
+    text-align: center;
+    display: inline-block;
+    padding: 5px 20px;
+    font-size: 12px;
+    line-height: 1;
+  }
+  .news-list .item .title{
+    margin: 0;
+    width: 100%;
+  }
+  .news-list .item a:hover .title{
+    color: #00F;
+  }
+  li.item {
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 767px){
+  .news-list .item a{
+    flex-wrap: wrap;
+  }
+  .news-list .item .date{
+    min-width: 100px;
+  }
+  .news-list .item .title{
+    margin-top: 10px;
+  }
+  }
+  .customer-img {
+    width: 320px;
+    height: 157px;
+  }
+  /* 装飾 */
+   
+  *{
+    box-sizing: border-box;
+  }
+  a{
+    text-decoration: none;
+  }

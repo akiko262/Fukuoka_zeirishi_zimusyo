@@ -1,0 +1,28 @@
+@charset "UTF-8";   
+/* consultation ----------------------------------
+------------------------------------*/
+.box-021 {
+    position: relative;
+    max-width: 90%;
+    margin: 1em auto;
+    padding: 1em 1.5em;
+    border: 2px solid #2589d0;
+    border-radius: 3px;
+    color: #333;
+}
+
+.box-021::before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -1em;
+    left: -1em;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background-color: #2589d0;
+    color: #fff;
+    font-weight: 600;
+    content: attr(data-number);
+}
